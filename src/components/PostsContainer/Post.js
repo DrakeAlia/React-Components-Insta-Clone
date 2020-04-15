@@ -8,11 +8,11 @@ import "./Posts.css";
 
 // pass props in this file to
 const Post = props => {
-  // set up state for the likes
+// set up state for the likes
   const [likes, setLikes] = useState(props.post.likes);
   const addLikes = () => setLikes(likes + 1);
 
-  return (
+  return ( // adding in post header into post //
     <div className="post-border">
       <PostHeader
         username={props.post.username}
@@ -28,7 +28,7 @@ const Post = props => {
 
       <CommentSection postId={props.post.imageUrl} comments={props.post.comments} />
     </div>
-  );
+  )
 };
 
 export default Post;

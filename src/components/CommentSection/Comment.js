@@ -10,7 +10,7 @@ const Comment = props => {
       {' '}
       <span className="comment">{props.comment.text}</span>
     </div>
-  );
+  )
 };
 
 

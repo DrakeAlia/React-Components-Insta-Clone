@@ -19,7 +19,7 @@ const App = () => {
       <SearchBar/>
       <PostsPage/>
     </div>
-  );
+  )
 };
 
 export default App;
